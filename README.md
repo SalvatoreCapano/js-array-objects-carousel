@@ -46,3 +46,7 @@ Bonus 1
 
 Bonus 2
 1. Dopo 3 secondi dall'ultimo click, l'immagine cambia automaticamente ogni 3 secondi
+
+Bonus 3
+1. Aggiungere pulsanti start/stop autoplay
+2. Aggiungere pulsante inversionverso autoplay
