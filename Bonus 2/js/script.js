@@ -57,7 +57,7 @@ for (let i = 0; i < images.length; i++) {
         // Crea nuova thumbnail
         const newThumbnail = document.createElement("div");
         newThumbnail.classList.add ("thumbnail");
-        newThumbnail.style.setProperty("background-image", `url("../../${images[i].image}")`)
+        newThumbnail.style.setProperty("background-image", `url("../${images[i].image}")`)
 
         thumbnailsContainer.append (newThumbnail);
         allThumbnails.push(newThumbnail);
