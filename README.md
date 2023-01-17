@@ -36,3 +36,6 @@ Milestone 1
 3. Aggiungere funzionalita' frecce
 Milestone 2
 1. Ciclo infinito
+Bonus 1
+1. Aggiungere le thumbnails
+2. Al click sulle thumbnails si mostra l'immagine corrispondente
