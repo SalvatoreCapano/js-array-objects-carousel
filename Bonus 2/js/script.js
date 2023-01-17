@@ -72,7 +72,8 @@ const leftBtn = document.querySelector("#arrowLeft");
 const rightBtn = document.querySelector("#arrowRight");
 
 // Cambia la slide ogni 3 secondi
-const autoplay = setInterval(changeSlideAutoplay, 3000);
+let autoplay;
+setAutoplay();
 
 // Click Freccia SX
 leftBtn.addEventListener("click", function(){
@@ -85,8 +86,8 @@ leftBtn.addEventListener("click", function(){
     showNextSlide (currentIndex);
 
     // Resetta il timer dell'autoplay
-    clearInterval(autoplay)
-    setTimeout (resetAutoplay, 4000);
+    setAutoplay();
+
 });
 
 // Click Freccia DX
@@ -100,8 +101,8 @@ rightBtn.addEventListener("click", function(){
     showNextSlide (currentIndex);
 
     // Resetta il timer dell'autoplay
-    clearInterval(autoplay)
-    setTimeout (resetAutoplay, 4000);
+    setAutoplay();
+
 });
 
 // Cambia slide al click su una thumbnail
@@ -173,7 +174,11 @@ function changeSlideAutoplay () {
     console.log ("Esecuzione autoplay");
 }
 
-// Resetta l'autoplay
-function resetAutoplay () {
-    const autoplay = setInterval(changeSlideAutoplay, 1000);
+// Imposta l'autoplay
+function setAutoplay () {
+
+    if (autoplay != undefined) {
+        clearInterval(autoplay)
+    }
+    autoplay = setInterval(changeSlideAutoplay, 3000);
 }
