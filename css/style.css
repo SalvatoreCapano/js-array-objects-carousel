@@ -5,10 +5,20 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
 
 .container {
-    padding: 1rem;
-    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    border: 10px solid black;
 }
 
 .carousel {
@@ -20,12 +30,44 @@
     position: relative;
 }
 
-.imgSlider {
+.sliderContainer {
     width: 100%;
-    height: 700px;
 }
 
-.imgSlider img{
+.sliderContainer .slides{
+    width: 100%;
+    list-style: none;
+}
+
+.sliderContainer .slides .slide {
+    width: 100%;
+    height: 700px;
+
+    position: relative;
+}
+
+.gameInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    color: white;
+
+    padding: 1.5rem 1rem 1rem;
+
+    background: rgba(255,255,255,0);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.9) 40%);
+}
+
+.gameInfo .title {
+    margin-bottom: 0.25rem;
+}
+
+.gameInfo .description {
+    font-size: 0.95rem;
+}
+
+.sliderContainer .slides .slide img{
     width: 100%;
     height: 100%;
 
@@ -54,6 +96,17 @@
 .arrows #arrowRight {
     right: 0;
 }
+
+.slide.hidden {
+    opacity: 0;
+    display: none;
+    transition: all 0.5s;
+}
+
+
+
+
+
 
 @media screen and (max-width:1000px) {
     .carousel {
