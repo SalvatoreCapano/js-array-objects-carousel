@@ -26,8 +26,10 @@ Aggiungere funzionalità di autoplay: dopo un certo periodo di tempo (3 secondi)
 BONUS 3:
 Aggiungere bottoni di start/stop e di inversione del meccanismo di autoplay.
 
-
-
+STEPS:
+Milestone 1
+1. Realizzare struttura HTML
+2. Definire stile slider
 
 
 

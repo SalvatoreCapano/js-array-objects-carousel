@@ -4,3 +4,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.container {
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.imgSlider {
+    width: 100%;
+    height: 700px;
+}
+
+.imgSlider img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.arrows > * {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding: 5px;
+
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    background-color: rgba(255, 0, 0, 0.5);
+
+    cursor: pointer;
+}
+
+.arrows #arrowLeft {
+    left: 0;
+}
+
+.arrows #arrowRight {
+    right: 0;
+}
+
+@media screen and (max-width:1000px) {
+    .carousel {
+        max-width: 700px;
+    }
+}
