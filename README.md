@@ -27,10 +27,12 @@ BONUS 3:
 Aggiungere bottoni di start/stop e di inversione del meccanismo di autoplay.
 
 STEPS:
-Milestone 1
+Milestone 0
 1. Realizzare struttura HTML
 2. Definire stile slider
-Milestone 2
+Milestone 1
 1. Generare img con JS
 2. Aggiungere dati all'img
 3. Aggiungere funzionalita' frecce
+Milestone 2
+1. Ciclo infinito

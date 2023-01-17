@@ -50,7 +50,6 @@ for (let i = 0; i < images.length; i++) {
         slides.append (newSlide);
 }
 
-
 allSlides[currentIndex].classList.remove("hidden");
 console.log(allSlides);
 
